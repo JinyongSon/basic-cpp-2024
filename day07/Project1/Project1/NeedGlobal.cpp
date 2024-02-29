@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 using namespace std;
 
 int simObjCnt = 0;
@@ -10,7 +10,7 @@ public:
 	SoSimple()
 	{
 		simObjCnt++;
-		cout << simObjCnt << "��° SoSimple ��ü" << endl;
+		cout << simObjCnt << "¹øÂ° SoSimple °´Ã¼" << endl;
 	}
 };
 
@@ -20,12 +20,12 @@ public:
 	SoComplex()
 	{
 		cmxObjCnt++;
-		cout << cmxObjCnt << "��° SoComplex ��ü" << endl;
+		cout << cmxObjCnt << "¹øÂ° SoComplex °´Ã¼" << endl;
 	}
 	SoComplex(SoComplex& copy)
 	{
 		cmxObjCnt++;
-		cout << cmxObjCnt << "��° SoComplex ��ü" << endl;
+		cout << cmxObjCnt << "¹øÂ° SoComplex °´Ã¼" << endl;
 	}
 };
 
