@@ -1,5 +1,5 @@
-// file: RectangleFault.cpp
-// desc: а╓╨╦ю╨╢п
+О╩©// file: RectangleFault.cpp
+// desc: Л═∙КЁ╢Л²─К▀┴
 
 #include <iostream>
 using namespace std;
@@ -20,9 +20,9 @@ public:
 public:
 	void ShowRecInfo()
 	{
-		cout << "аб ╩С╢э: " << '[' << upLeft.x << ", ";
+		cout << "Л╒▄ Л┐│К▀╗: " << '[' << upLeft.x << ", ";
 		cout << upLeft.y << ']' << endl;
-		cout << "©Л го╢э: " << '[' << lowRight.x << ", ";
+		cout << "Л ╟ М∙≤К▀╗: " << '[' << lowRight.x << ", ";
 		cout << lowRight.y << ']' << endl << endl;
 	}
 };

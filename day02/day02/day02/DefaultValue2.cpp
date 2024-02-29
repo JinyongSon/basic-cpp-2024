@@ -1,17 +1,17 @@
-#include <iostream>
-int Adder(int num1 = 1, int num2 = 2);	// ÇÔ¼ö ¼±¾ð
+ï»¿#include <iostream>
+int Adder(int num1 = 1, int num2 = 2);	// í•¨ìˆ˜ ì„ ì–¸
 
 int main(void)
 {
-	std::cout << Adder() << std::endl;	// ÇÔ¼ö È£Ãâ
+	std::cout << Adder() << std::endl;	// í•¨ìˆ˜ í˜¸ì¶œ
 	std::cout << Adder(5) << std::endl;
 	std::cout << Adder(3, 5) << std::endl;
 	return 0;
 }
 
-int Adder(int num1, int num2)	// ÇÔ¼ö Á¤ÀÇ
+int Adder(int num1, int num2)	// í•¨ìˆ˜ ì •ì˜
 {
 	return num1 + num2;
 }
 
-// Å¬·¡½º ¾È¿¡ µé¾î°¡´Â ÇÔ¼ö¸¦ ¸Þ¼­µå ¶ó°í ºÎ¸¥´Ù. *****
+// í´ëž˜ìŠ¤ ì•ˆì— ë“¤ì–´ê°€ëŠ” í•¨ìˆ˜ë¥¼ ë©”ì„œë“œ ë¼ê³  ë¶€ë¥¸ë‹¤. *****

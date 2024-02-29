@@ -1,20 +1,20 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
-int global = 100;	// Àü¿ªº¯¼ö - ÇÁ·Î±×·¥ ÀüÃ¼¿¡¼­ »ç¿ë°¡´É
+int global = 100;	// ì „ì—­ë³€ìˆ˜ - í”„ë¡œê·¸ë¨ ì „ì²´ì—ì„œ ì‚¬ìš©ê°€ëŠ¥
 int global1 = 200;
 
 int main()
 {
-	int val = 100;	// Áö¿ªº¯¼ö - ¼±¾ğµÈ ¹üÀ§¿¡¼­¸¸ »ç¿ë°¡´É
+	int val = 100;	// ì§€ì—­ë³€ìˆ˜ - ì„ ì–¸ëœ ë²”ìœ„ì—ì„œë§Œ ì‚¬ìš©ê°€ëŠ¥
 	global = 200;
 
 	int global1 = 300;
 
-	cout << "Àü¿ªº¯¼ö global: " << global << endl;
-	cout << "Áö¿ªº¯¼ö: " << val << endl;
+	cout << "ì „ì—­ë³€ìˆ˜ global: " << global << endl;
+	cout << "ì§€ì—­ë³€ìˆ˜: " << val << endl;
 
-	cout << "Àü¿ªº¯¼ö global1: " << global1 << endl;	// Áö¿ªº¯¼ö¿Í ÀÌ¸§ÀÌ µ¿ÀÏÇÒ °æ¿ì´Â Àü¿ªº¯¼ö´Â °¡·ÁÁø´Ù.
+	cout << "ì „ì—­ë³€ìˆ˜ global1: " << global1 << endl;	// ì§€ì—­ë³€ìˆ˜ì™€ ì´ë¦„ì´ ë™ì¼í•  ê²½ìš°ëŠ” ì „ì—­ë³€ìˆ˜ëŠ” ê°€ë ¤ì§„ë‹¤.
 
 	return 0;
 }

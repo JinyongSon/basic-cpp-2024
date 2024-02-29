@@ -1,9 +1,9 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
 int main()
 {
-	const int num = 10;	// const: numº¯¼ö¸¦ »ó¼öÈ­½ÃÅ²´Ù.
+	const int num = 10;	// const: numë³€ìˆ˜ë¥¼ ìƒìˆ˜í™”ì‹œí‚¨ë‹¤.
 	//num = 100;
 
 	cout << num << endl;
