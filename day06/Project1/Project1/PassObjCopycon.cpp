@@ -1,5 +1,5 @@
 // file: PassObjCopycon.cpp
-// desc: º¹»ç »ı¼ºÀÚ È£Ãâ
+// desc: ë³µì‚¬ ìƒì„±ì í˜¸ì¶œ
 #include <iostream>
 using namespace std;
 
@@ -10,19 +10,19 @@ private:
 public:
 	SoSimple(int n) : num(n)
 	{
-		cout << "SoSimple(int n) constructor È£Ãâ" << endl; 
+		cout << "SoSimple(int n) constructor í˜¸ì¶œ" << endl; 
 	}
 	SoSimple(const SoSimple& copy) : num(copy.num)
 	{
 		cout << "Called SoSimple(cost SoSimple& copy)" << endl;
 	}
-	void ShowData()					// ¸â¹öÇÔ¼ö --> °´Ã¼ »ı¼º ÈÄ¿¡ »ç¿ëÀÌ °¡´ÉÇÏ´Ù.
+	void ShowData()					// ë©¤ë²„í•¨ìˆ˜ --> ê°ì²´ ìƒì„± í›„ì— ì‚¬ìš©ì´ ê°€ëŠ¥í•˜ë‹¤.
 	{
 		cout << "num: " << num << endl;
 	}
 };
 
-void SimpleFuncObj(SoSimple ob)		// Àü¿ªÇÔ¼ö --> °³³ª ¼Ò³ª Á¢±Ù °¡´É
+void SimpleFuncObj(SoSimple ob)		// ì „ì—­í•¨ìˆ˜ --> ê°œë‚˜ ì†Œë‚˜ ì ‘ê·¼ ê°€ëŠ¥
 {
 	ob.ShowData();
 }
@@ -30,8 +30,8 @@ void SimpleFuncObj(SoSimple ob)		// Àü¿ªÇÔ¼ö --> °³³ª ¼Ò³ª Á¢±Ù °¡´É
 int main(void)
 {
 	SoSimple obj(7);
-	cout << "ÇÔ¼ö È£Ãâ Àü" << endl;
+	cout << "í•¨ìˆ˜ í˜¸ì¶œ ì „" << endl;
 	SimpleFuncObj(obj);
-	cout << "ÇÔ¼ö È£Ãâ ÈÄ" << endl;
+	cout << "í•¨ìˆ˜ í˜¸ì¶œ í›„" << endl;
 	return 0;
 }

@@ -1,5 +1,5 @@
 // file: ShallowCopyError.cpp
-// desc: µğÆúÆ® º¹»ç »ı¼ºÀÚÀÇ ¹®Á¦Á¡
+// desc: ë””í´íŠ¸ ë³µì‚¬ ìƒì„±ìì˜ ë¬¸ì œì 
 
 #include <iostream>
 #include <cstring>
@@ -13,7 +13,7 @@ private:
 public:
 	Person(const char* myname, int myage)
 	{
-		cout << "»ı¼ºÀÚ È£Ãâ" << endl;
+		cout << "ìƒì„±ì í˜¸ì¶œ" << endl;
 		int len = strlen(myname) + 1;
 		name = new char[len];
 		strcpy(name, myname);
@@ -21,15 +21,15 @@ public:
 	}
 	Person(const Person& copy) : age(copy.age)
 	{
-		cout << "±íÀº º¹»ç»ı¼ºÀÚ È£Ãâ" << endl;
+		cout << "ê¹Šì€ ë³µì‚¬ìƒì„±ì í˜¸ì¶œ" << endl;
 		this->name = new char[strlen(copy.name) + 1];
 		strcpy(name, copy.name);
 	}
 
 	void ShowPersonInfo() const
 	{
-		cout << "ÀÌ¸§: " << name << endl;
-		cout << "³ªÀÌ: " << age << endl;
+		cout << "ì´ë¦„: " << name << endl;
+		cout << "ë‚˜ì´: " << age << endl;
 	}
 	~Person()
 	{
@@ -41,15 +41,15 @@ public:
 int main(void)
 {
 	Person man1("Lee dong woo", 29);
-	Person man2 = man1;		// º¹»ç »ı¼ºÀÚ È£Ãâ
+	Person man2 = man1;		// ë³µì‚¬ ìƒì„±ì í˜¸ì¶œ
 	man1.ShowPersonInfo();
 	man2.ShowPersonInfo();
 	return 0;
 }
 
-int func(int a) {	// a = 10; numÀÇ 10À» º¹»çÇØ¼­ »ç¿ëÇÑ´Ù.
+int func(int a) {	// a = 10; numì˜ 10ì„ ë³µì‚¬í•´ì„œ ì‚¬ìš©í•œë‹¤.
 	a = 10 + a;
-	return a;		// a¸¦ ¸®ÅÏÇÑ´Ù.
+	return a;		// aë¥¼ ë¦¬í„´í•œë‹¤.
 }
 
 int num = 10;

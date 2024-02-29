@@ -1,5 +1,5 @@
 // file: ConstOverloading.cpp
-// desc: const¿Í ÇÔ¼ö ¿À¹ö·Îµù
+// desc: constì™€ í•¨ìˆ˜ ì˜¤ë²„ë¡œë”©
 #include <iostream>
 using namespace std;
 

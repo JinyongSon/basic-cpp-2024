@@ -1,5 +1,5 @@
 // file: ReturnObjCopycon.cpp
-// desc: º¹»ç »ı¼ºÀÚ È£Ãâ
+// desc: ë³µì‚¬ ìƒì„±ì í˜¸ì¶œ
 
 #include <iostream>
 using namespace std;
@@ -11,11 +11,11 @@ private:
 public:
 	SoSimple(int n) : num(n)
 	{
-		cout << "SoSimple(int n) »ı¼ºÀÚ È£Ãâ" << endl;
+		cout << "SoSimple(int n) ìƒì„±ì í˜¸ì¶œ" << endl;
 	}
 	SoSimple(const SoSimple& copy) : num(copy.num)
 	{
-		cout << "SoSimple(const SoSimple& copy) º¹»ç»ı¼ºÀÚ È£Ãâ" << endl;
+		cout << "SoSimple(const SoSimple& copy) ë³µì‚¬ìƒì„±ì í˜¸ì¶œ" << endl;
 	}
 	SoSimple& AddNum(int n)
 	{
@@ -30,14 +30,14 @@ public:
 
 SoSimple SimpleFuncObj(SoSimple ob)
 {
-	cout << "return ÀÌÀü" << endl;
+	cout << "return ì´ì „" << endl;
 	return ob;
 }
 
 int main(void)
 {
 	SoSimple obj(7);
-	SimpleFuncObj(obj).AddNum(30).ShowData();	// SimpleFuncObj(obj)¸¦ ½ÇÇàÇÏ¸é SoSimple ob = SimpleFuncObj(obj)ÀÌ¹Ç·Î ob¸¦ »ç¿ëÇÏ±â À§ÇØ¼­ ÀÓ½Ã°´Ã¼¸¦ ¸¸µë
+	SimpleFuncObj(obj).AddNum(30).ShowData();	// SimpleFuncObj(obj)ë¥¼ ì‹¤í–‰í•˜ë©´ SoSimple ob = SimpleFuncObj(obj)ì´ë¯€ë¡œ obë¥¼ ì‚¬ìš©í•˜ê¸° ìœ„í•´ì„œ ì„ì‹œê°ì²´ë¥¼ ë§Œë“¬
 	obj.ShowData();
 	return 0;
 }

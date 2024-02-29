@@ -1,5 +1,5 @@
 // file: IKnowTempObj.cpp
-// desc: ÀÓ½Ã°´Ã¼
+// desc: ì„ì‹œê°ì²´
 
 #include<iostream>
 using namespace std;
@@ -25,13 +25,13 @@ public:
 
 int main(void)
 {
-	Temporary(100);		// Temporary t(100); °´Ã¼ ÀÌ¸§ ¾øÀÌ »ç¿ëÇÏ¸é ÀÓ½Ã°´Ã¼°¡ ¸¸µé¾îÁü
+	Temporary(100);		// Temporary t(100); ê°ì²´ ì´ë¦„ ì—†ì´ ì‚¬ìš©í•˜ë©´ ì„ì‹œê°ì²´ê°€ ë§Œë“¤ì–´ì§
 	cout << "********** after make!" << endl << endl;
 
 	Temporary(200).ShowTempInfo();
 	cout << "********** after make!" << endl << endl;
 
-	const Temporary& ref = Temporary(300);	// ÀÓ½Ã°´Ã¼´Â ÂüÁ¶ ÇÒ ¼ö ¾øÁö¸¸ const »ç¿ëÇÏ¸é ÀÓ½Ã°´Ã¼ ÂüÁ¶ °¡´É
+	const Temporary& ref = Temporary(300);	// ì„ì‹œê°ì²´ëŠ” ì°¸ì¡° í•  ìˆ˜ ì—†ì§€ë§Œ const ì‚¬ìš©í•˜ë©´ ì„ì‹œê°ì²´ ì°¸ì¡° ê°€ëŠ¥
 	cout << "********** end of main!" << endl << endl;
 	return 0;
 }

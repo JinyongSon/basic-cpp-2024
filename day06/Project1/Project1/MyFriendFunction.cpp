@@ -1,5 +1,5 @@
 // file: MyFriendFunction.cpp
-// desc: ÇÔ¼öÀÇ friend ¼±¾ğ
+// desc: í•¨ìˆ˜ì˜ friend ì„ ì–¸
 
 #include <iostream>
 using namespace std;
@@ -30,8 +30,8 @@ private:
 public:
 	Point(const int& xpos, const int& ypos) : x(xpos), y(ypos)
 	{}
-	friend Point PointOP::PointAdd(const Point&, const Point&);		// ÇÔ¼ö ¼±¾ğ¿¡¼­´Â ¸Å°³º¯¼öÀÇ ÀÌ¸§Àº »ı·« °¡´ÉÇÏ´Ù.
-	friend Point PointOP::PointSub(const Point&, const Point&);		// ¸Å°³º¯¼ö Å¸ÀÔÀº »ı·«ÇÒ ¼ö ¾ø´Ù.
+	friend Point PointOP::PointAdd(const Point&, const Point&);		// í•¨ìˆ˜ ì„ ì–¸ì—ì„œëŠ” ë§¤ê°œë³€ìˆ˜ì˜ ì´ë¦„ì€ ìƒëµ ê°€ëŠ¥í•˜ë‹¤.
+	friend Point PointOP::PointSub(const Point&, const Point&);		// ë§¤ê°œë³€ìˆ˜ íƒ€ì…ì€ ìƒëµí•  ìˆ˜ ì—†ë‹¤.
 	friend void ShowPointPos(const Point&);
 };
 

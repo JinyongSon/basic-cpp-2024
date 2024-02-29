@@ -1,5 +1,5 @@
 // file: ReturnObjDeadTime.cpp
-// desc: °´Ã¼ÀÇ »ı¼º°ú ¼Ò¸ê
+// desc: ê°ì²´ì˜ ìƒì„±ê³¼ ì†Œë©¸
 #include <iostream>
 using namespace std;
 
@@ -24,33 +24,33 @@ public:
 
 SoSimple SimpleFuncObj(SoSimple ob)
 {
-	cout << "Parm ADR: " << &ob << endl;	// &ob: °´Ã¼obÀÇ ÁÖ¼Ò
+	cout << "Parm ADR: " << &ob << endl;	// &ob: ê°ì²´obì˜ ì£¼ì†Œ
 	return ob;
 }
 
 int main(void)
 {
-	SoSimple obj(7);		// °´Ã¼ obj »ı¼º
-	SimpleFuncObj(obj);		// ob »ı¼º, return ob·Î ÀÎÇØ ÀÓ½Ã°´Ã¼ »ı¼º
+	SoSimple obj(7);		// ê°ì²´ obj ìƒì„±
+	SimpleFuncObj(obj);		// ob ìƒì„±, return obë¡œ ì¸í•´ ì„ì‹œê°ì²´ ìƒì„±
 
 	cout << endl;
-	SoSimple tempRef = SimpleFuncObj(obj);	// ÀÓ½Ã°´Ã¼ ÁÖ¼ÒÀúÀå
+	SoSimple tempRef = SimpleFuncObj(obj);	// ì„ì‹œê°ì²´ ì£¼ì†Œì €ì¥
 	cout << "Return Obj " << &tempRef << endl;
 	return 0;
 }
 /*
-	New Object: °´Ã¼ obj ÁÖ¼Ò
-	New Copy obj: °´Ã¼ ob ÁÖ¼Ò
-	Parm ADR: °´Ã¼ ob ÁÖ¼Ò
-	New Copy obj: ÀÓ½Ã°´Ã¼ ÁÖ¼Ò
-	Destroy obj: °´Ã¼ ob ¼Ò¸ê
-	Destroy obj: ÀÓ½Ã°´Ã¼ ¼Ò¸ê
+	New Object: ê°ì²´ obj ì£¼ì†Œ
+	New Copy obj: ê°ì²´ ob ì£¼ì†Œ
+	Parm ADR: ê°ì²´ ob ì£¼ì†Œ
+	New Copy obj: ì„ì‹œê°ì²´ ì£¼ì†Œ
+	Destroy obj: ê°ì²´ ob ì†Œë©¸
+	Destroy obj: ì„ì‹œê°ì²´ ì†Œë©¸
 
-	New Copy obj: °´Ã¼ ob ÁÖ¼Ò
-	Parm ADR: °´Ã¼ ob ÁÖ¼Ò
-	New Copy obj: ÀÓ½Ã°´Ã¼ ÁÖ¼Ò
-	Destroy obj: °´Ã¼ ob ¼Ò¸ê
-	Return Obj ÀÓ½Ã°´Ã¼ ÁÖ¼Ò
-	Destroy obj: ÀÓ½Ã°´Ã¼ ¼Ò¸ê
-	Destroy obj: °´Ã¼ obj ¼Ò¸ê
+	New Copy obj: ê°ì²´ ob ì£¼ì†Œ
+	Parm ADR: ê°ì²´ ob ì£¼ì†Œ
+	New Copy obj: ì„ì‹œê°ì²´ ì£¼ì†Œ
+	Destroy obj: ê°ì²´ ob ì†Œë©¸
+	Return Obj ì„ì‹œê°ì²´ ì£¼ì†Œ
+	Destroy obj: ì„ì‹œê°ì²´ ì†Œë©¸
+	Destroy obj: ê°ì²´ obj ì†Œë©¸
 */

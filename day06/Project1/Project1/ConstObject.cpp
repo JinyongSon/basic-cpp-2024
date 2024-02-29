@@ -1,5 +1,5 @@
 // file: ConstObject.cpp
-// desc: const ∞¥√º
+// desc: const Í∞ùÏ≤¥
 #include <iostream>
 using namespace std;
 

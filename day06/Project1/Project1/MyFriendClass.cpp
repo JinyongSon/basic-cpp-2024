@@ -1,5 +1,5 @@
 // file: MyFriendClass.cpp
-// desc: Å¬·¡½ºÀÇ friend ¼±¾ğ
+// desc: í´ë˜ìŠ¤ì˜ friend ì„ ì–¸
 #include <iostream>
 #include <cstring>
 using namespace std;
