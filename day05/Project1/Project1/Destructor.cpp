@@ -8,19 +8,19 @@ private:
 	char* name;
 	int age;
 public:
-	Person(const char* myname, int myage)	// ÀÔ·Â 2°³¸¦ °®´Â »ı¼ºÀÚ
+	Person(const char* myname, int myage)	// ì…ë ¥ 2ê°œë¥¼ ê°–ëŠ” ìƒì„±ì
 	{
-		int len = strlen(myname) + 1;		// ¹®ÀÚ¿­ Å©±â¸¸Å­ ¸Ş¸ğ¸® ÇÒ´çÀ» ¹Ş±â À§ÇØ strlen()À» ÀÌ¿ëÇÏ¿© ¹®ÀÚ¿­ÀÇ ±æÀÌ¸¦ ±¸ÇÏ¿© len¿¡ ÀúÀå
-		name = new char[len];				// lenÅ©±â¸¸Å­ Èü ¿µ¿ª ¸Ş¸ğ¸® ÇÒ´ç
+		int len = strlen(myname) + 1;		// ë¬¸ìì—´ í¬ê¸°ë§Œí¼ ë©”ëª¨ë¦¬ í• ë‹¹ì„ ë°›ê¸° ìœ„í•´ strlen()ì„ ì´ìš©í•˜ì—¬ ë¬¸ìì—´ì˜ ê¸¸ì´ë¥¼ êµ¬í•˜ì—¬ lenì— ì €ì¥
+		name = new char[len];				// lení¬ê¸°ë§Œí¼ í™ ì˜ì—­ ë©”ëª¨ë¦¬ í• ë‹¹
 		strcpy(name, myname);
 		age = myage;
 	}
-	void ShowPersonInfo() const		// name°ú age´Â °ªÀÌ º¯ÇÏÁö ¾Ê¾Æ¾ß ÇÏ±â ¶§¹®¿¡ const
+	void ShowPersonInfo() const		// nameê³¼ ageëŠ” ê°’ì´ ë³€í•˜ì§€ ì•Šì•„ì•¼ í•˜ê¸° ë•Œë¬¸ì— const
 	{
-		cout << "ÀÌ¸§: " << name << endl;
-		cout << "³ªÀÌ: " << age << endl;
+		cout << "ì´ë¦„: " << name << endl;
+		cout << "ë‚˜ì´: " << age << endl;
 	}
-	~Person()		// ¼Ò¸êÀÚ : °´Ã¼¸¦ ¼Ò¸ê ½ÃÅ´
+	~Person()		// ì†Œë©¸ì : ê°ì²´ë¥¼ ì†Œë©¸ ì‹œí‚´
 	{
 		delete[]name;
 		cout << "called destructor!" << endl;

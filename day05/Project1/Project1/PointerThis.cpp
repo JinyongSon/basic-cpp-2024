@@ -9,7 +9,7 @@ private:
 public:
 	SoSimple(int num) 
 	{
-		this->num = num;		// this °´Ã¼ ÀÚ±âÀÚ½Å
+		this->num = num;		// this ê°ì²´ ìê¸°ìì‹ 
 		cout << "num=" << num << ", ";
 		cout << "address=" << this << endl;
 	}

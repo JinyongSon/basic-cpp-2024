@@ -28,24 +28,24 @@ public:
 	}
 	void ShowPersonInfo() const
 	{
-		cout << "ÀÌ¸§: " << name << ", ";
-		cout << "³ªÀÌ: " << age << endl;
+		cout << "ì´ë¦„: " << name << ", ";
+		cout << "ë‚˜ì´: " << age << endl;
 	}
 };
 
 int main(void)
 {
-	Person parr[3];			// °´Ã¼¹è¿­
-	char namestr[100];		// ¹®ÀÚ¹è¿­
-	char* strptr;			// charÅ¸ÀÔÀÇ Æ÷ÀÎÅÍº¯¼ö
+	Person parr[3];			// ê°ì²´ë°°ì—´
+	char namestr[100];		// ë¬¸ìžë°°ì—´
+	char* strptr;			// charíƒ€ìž…ì˜ í¬ì¸í„°ë³€ìˆ˜
 	int age;
 	int len;
 
 	for (int i = 0; i < 3; i++)
 	{
-		cout << "ÀÌ¸§: ";
+		cout << "ì´ë¦„: ";
 		cin >> namestr;
-		cout << "³ªÀÌ: ";
+		cout << "ë‚˜ì´: ";
 		cin >> age;
 		len = strlen(namestr) + 1;
 		strptr = new char[len];
