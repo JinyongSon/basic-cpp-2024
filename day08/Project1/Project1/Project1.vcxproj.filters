@@ -39,5 +39,14 @@
     <ClCompile Include="VirtualDestructor.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ReferenceAttribute.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="RealObjUnder1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="RealObjUnder2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
