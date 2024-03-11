@@ -143,7 +143,8 @@ int main() {
 				cout << "model: "; getline(cin, model);
 				cout << "RAM: "; getline(cin, RAM);
 				Handphone* h = new Handphone(id, price, producer, model, RAM);
-				p[]
+				p[i] = h;
+				i++;
 			}
 			else if (temp2 == 3)
 			{
@@ -154,7 +155,8 @@ int main() {
 				cout << "cpu: "; getline(cin, cpu);
 				cout << "RAM: "; getline(cin, RAM);
 				Computer* c = new Computer(id, price, producer, ISBN, cpu, RAM);
-
+				p[i] = c;
+				i++;
 			}
 		}
 		else if (temp1 == 2)
